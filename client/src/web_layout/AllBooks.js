@@ -3,16 +3,16 @@ import { gql, useMutation, useQuery } from '@apollo/client';
 import { Link } from 'react-router-dom';
 
 const Get_books = gql`
-query Query {
-  getBooks {
-    title
-    authorId
-    _id
-    author {
-      name
+  query Query {
+    getBooks {
+      title
+      authorId
+      _id
+      author {
+        name
+      }
     }
   }
-}
 `
 
 const AllBooks = () => {
